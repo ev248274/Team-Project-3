@@ -17,7 +17,6 @@ private:
             letter(letter), left(left), right(right) {}
     };
     Node* binary_tree_root;
-    char temp_l;
     std::string temp_c;
 public:
     // Constructors

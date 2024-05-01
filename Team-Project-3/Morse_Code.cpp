@@ -66,11 +66,7 @@ Converts a string of codes into a string of letters
 @return string: string of letters
 */
 std::string Morse_Code::decode(std::string& codes) {
-	// FIXME <----------------------------------------------------------------------------
-
-	/*Just a draft I made, please let me know what you guys think, or if we can use this at all. Thanks! -Jordan 04/30/24
 	std::string decoded_message;
-	// FIXME <----------------------------------------------------------------------------
 	Node* current = binary_tree_root;
 	for (char symbol : codes) {
 		if (symbol == '.') { // dot, indicating a move to the left child
@@ -92,7 +88,6 @@ std::string Morse_Code::decode(std::string& codes) {
 	}
 	return decoded_message;
 }
-*/
 
 /*
 Creates binary tree from text file
@@ -117,7 +112,6 @@ void Morse_Code::create_binary_tree() {
 Attaches an individual node to be put into the binary tree
 @param node: Pointer to node
 @param cde: Address of string morse code (to be changed)
-@param o_code: Address of string original code, which is the code without any changes
 @param ltr: Address of string letter
 */
 void Morse_Code::create_node(Node* node, std::string& cde, char& ltr) {
