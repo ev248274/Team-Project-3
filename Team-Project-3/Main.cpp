@@ -13,7 +13,12 @@ int main() {
 	cin >> set_of_letters;
 
 	encoded_message = first.encode(set_of_letters);
-	whitespace = std::string(encoded_message.size() - set_of_letters.size(), ' ');
+	if (encoded_message.size() >= set_of_letters.size()) {
+		whitespace = std::string(encoded_message.size() - set_of_letters.size(), ' ');
+	}
+	else {
+		whitespace = "";
+	}
 
 	cout << "\n`" << set_of_letters << "` " << whitespace << "Encoded: `" << encoded_message << "`" << endl;
 	cout << "`" << encoded_message << "` Decoded: `" << first.decode(encoded_message) << "`" << endl;
